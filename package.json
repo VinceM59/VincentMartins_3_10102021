@@ -1,0 +1,20 @@
+{
+  "name": "vincentmartins_3_10102021",
+  "version": "1.0.0",
+  "description": "P3-Openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinceM59/VincentMartins_3_10102021.git"
+  },
+  "author": "Vincent Martins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinceM59/VincentMartins_3_10102021/issues"
+  },
+  "homepage": "https://github.com/VinceM59/VincentMartins_3_10102021#readme"
+}
