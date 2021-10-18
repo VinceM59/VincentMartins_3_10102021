@@ -48,6 +48,7 @@ h1 {
 
 #restaurants {
   background-color: #F5F5F5;
+  padding: 2rem;
 }
 
 .file_img {
@@ -57,10 +58,32 @@ h1 {
   border-radius: 1rem 1rem 0 0;
 }
 
-.contents {
+.fonction_title {
+  font-weight: bold;
+  font-size: 1.2em;
   display: flex;
-  padding: 1rem;
-  flex-direction: column;
+  align-items: center;
+  margin-right: 28px;
+}
+
+#fonction_list {
+  display: flex;
+}
+
+.files {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.file {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+}
+
+.file_text {
+  padding: 0 1rem;
 }
 
 #footer {
@@ -69,6 +92,7 @@ h1 {
 
 .footer_logo {
   color: #ffffff;
+  padding: 0 1rem;
 }
 
 .footer_list {
@@ -83,10 +107,21 @@ h1 {
 .resto_img {
   width: 100%;
   object-fit: cover;
+  max-height: 40rem;
 }
 
 #menus {
   background-color: #F5F5F5;
+}
+
+.menus_carte {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+.menus_section {
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
