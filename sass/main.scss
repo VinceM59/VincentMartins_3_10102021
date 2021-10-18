@@ -41,6 +41,8 @@ h1
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
+    background-color: #E9EDEB;
+    padding: 1rem;
 }
 .search_city
 {
@@ -52,6 +54,12 @@ h1
 {
     text-align: center;
     padding: 2rem;
+    background-color: #FAF9F9;
+}
+
+#restaurants
+{
+    background-color: #F5F5F5;
 }
 .file_img
 {
@@ -66,4 +74,38 @@ h1
     display: flex;
     padding: 1rem;
     flex-direction: column;
+}
+
+#footer
+{
+    background-color: #353535;
+}
+
+.footer_logo
+{
+    color: #ffffff;
+}
+
+.footer_list
+{
+    list-style: none;
+}
+.footer_link
+{
+    color: #ffffff;
+}
+
+
+
+/*Pages HTML annexes*/
+
+.resto_img
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+#menus
+{
+    background-color: #F5F5F5;
 }
