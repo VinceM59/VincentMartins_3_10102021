@@ -10,12 +10,13 @@ a
     color: inherit;
 }
 
+$color_primary: #9356DC;
+$color_secondary: #FF79DA;
+$color_tertiary: #99E2D0;
 
-
-h1
+h1, .menus_header
 {
-    font-family : 'Shrikhand', cursif ;
-    font-size:2rem;
+    font-family : 'Shrikhand', cursive ;
 }
 
 #contents
@@ -70,7 +71,13 @@ h1
     border-radius: 1rem 1rem 0 0;
 }
 
-
+.file_new
+{
+    background-color: $color_tertiary;
+    padding: 0.5rem;
+    position: absolute;
+    top: 34rem;
+}
 .fonction_title
 {
     font-weight: bold;
@@ -139,6 +146,12 @@ h1
     background-color: #F5F5F5;
 }
 
+.menus_header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
 .menus_carte
 {
     display: grid;
@@ -146,7 +159,33 @@ h1
     column-gap: 2rem;
 }
 
+.menus_title
+{
+    text-transform: uppercase;
+    font-weight: normal;
+    border-bottom: 5px solid $color_tertiary;
+}
+
 .menus_section
 {
     padding: 1rem;
+}
+
+#menu
+{
+    display: flex;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.menu-title
+{
+    margin: 0;
+}
+.menu_subtitle
+{
+    margin: 0;
 }
