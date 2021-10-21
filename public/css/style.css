@@ -8,12 +8,18 @@ a {
   color: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 h1, .menus_header {
   font-family: "Shrikhand", cursive;
 }
 
-#contents {
-  margin: 0;
+.contents {
+  position: relative;
+  max-width: 1280px;
+  margin: auto;
 }
 
 .header {
@@ -45,6 +51,39 @@ h1, .menus_header {
   background-color: #FAF9F9;
 }
 
+#fonction {
+  padding: 2rem 1.2rem;
+}
+
+.fonction_title {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+#fonction_list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.fonction_filter {
+  padding: 1.5rem;
+  display: flex;
+  position: relative;
+  background-color: #F5F5F5;
+  border-radius: 1rem;
+  flex: 1;
+  margin: 0 0 0 1rem;
+}
+
+.fonction_icon {
+  margin-right: 1rem;
+}
+
+.fonction_text {
+  margin: 0;
+}
+
 #restaurants {
   background-color: #F5F5F5;
   padding: 2rem;
@@ -62,18 +101,6 @@ h1, .menus_header {
   padding: 0.5rem;
   position: absolute;
   top: 34rem;
-}
-
-.fonction_title {
-  font-weight: bold;
-  font-size: 1.2em;
-  display: flex;
-  align-items: center;
-  margin-right: 28px;
-}
-
-#fonction_list {
-  display: flex;
 }
 
 .files {
@@ -99,6 +126,7 @@ h1, .menus_header {
 .footer_logo {
   color: #ffffff;
   padding: 0 1rem;
+  margin: 0;
 }
 
 .footer_list {
@@ -118,6 +146,9 @@ h1, .menus_header {
 
 #menus {
   background-color: #F5F5F5;
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+  margin-top: -4rem;
 }
 
 .menus_header {
