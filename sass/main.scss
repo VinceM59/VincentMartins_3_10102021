@@ -1,33 +1,4 @@
-html
-{
-    font-family: 'roboto', sans-serif;
-}
-
-a
-{
-    text-decoration: none;
-    color: inherit;
-}
-
-$color_primary: #9356DC;
-$color_secondary: #FF79DA;
-$color_tertiary: #99E2D0;
-
-body
-{
-    margin: 0;
-}
-h1, .menus_header
-{
-    font-family : 'Shrikhand', cursive ;
-}
-
-.contents
-{
-    position: relative;
-    max-width: 1280px;
-    margin: auto;
-}
+@import "./base/base";
 
 
 .header
