@@ -28,3 +28,32 @@ h1, .menus_header
     max-width: 1280px;
     margin: auto;
 }
+
+
+#footer
+{
+    background-color: #353535;
+
+        .footer_logo
+    {
+        color: #ffffff;
+        padding: 0 1rem;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+}
+
+.footer_list
+{
+    list-style: none;
+
+    .footer_text
+    {
+        margin: 0.4rem 0;
+        
+        .footer_link
+        {
+            color: #ffffff;
+        }
+    }
+}

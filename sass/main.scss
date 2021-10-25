@@ -77,21 +77,9 @@
     background-color: #F5F5F5;
     padding: 2rem;
 }
-.file_img
-{
-    object-fit: cover;
-    width: 100%;
-    height: 14rem;
-    border-radius: 1rem 1rem 0 0;
-}
 
-.file_new
-{
-    background-color: $color_tertiary;
-    padding: 0.5rem;
-    position: absolute;
-    top: 34rem;
-}
+
+
 
 .files
 {
@@ -106,37 +94,27 @@
     background-color: #ffffff;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
+
+    &_img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 14rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+        &_new
+        {
+            background-color: $color_tertiary;
+            padding: 0.5rem;
+            position: absolute;
+            top: 34rem;
+        }
 }
 
 .file_text
 {
     padding: 0 1rem;
-}
-#footer
-{
-    background-color: #353535;
-}
-
-.footer_logo
-{
-    color: #ffffff;
-    padding: 0 1rem;
-    margin: 0;
-    font-size: 1.3rem;
-}
-
-.footer_list
-{
-    list-style: none;
-}
-.footer_link
-{
-    color: #ffffff;
-}
-
-.footer_text
-{
-    margin: 0.4rem 0;
 }
 
 
