@@ -158,6 +158,13 @@ h1, .menus_header {
 }
 
 /*Pages HTML annexes*/
+.fa-arrow-left {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 0.9rem;
+  left: 1rem;
+}
+
 .resto_img {
   width: 100%;
   object-fit: cover;
