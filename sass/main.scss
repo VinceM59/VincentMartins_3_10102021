@@ -82,6 +82,7 @@
     background-color: #ffffff;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
+    position: relative;
 
     &_img
     {
@@ -89,7 +90,6 @@
         width: 100%;
         height: 14rem;
         border-radius: 1rem 1rem 0 0;
-        z-index: 1;
     }
 
         
@@ -100,8 +100,8 @@
             background-color: $color_tertiary;
             padding: 0.5rem;
             position: absolute;
-            top: 3rem;
-            z-index: 2;
+            top: 0rem;
+            right: 1rem;
         }
 
 .file_text
@@ -243,5 +243,16 @@
         display: grid;
     grid-template-columns: repeat(1,1fr);
     column-gap: 2rem;
+    }
+
+    
+}
+
+
+@media screen and (max-width:850px)
+{
+    #picture
+    {
+        max-height: 21rem;
     }
 }
