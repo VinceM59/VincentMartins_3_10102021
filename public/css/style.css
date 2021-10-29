@@ -236,6 +236,22 @@ h1, .menus_header {
   justify-content: center;
 }
 
+.button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 0.75rem 1rem;
+  color: #F5F5F5;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: 0 0 16px #0000002e;
+  font-size: 1rem;
+}
+
+.menu_button {
+  padding: 1rem;
+  justify-content: center;
+  display: flex;
+}
+
 /*responsive*/
 @media screen and (max-width: 1100px) {
   #fonction_list {
