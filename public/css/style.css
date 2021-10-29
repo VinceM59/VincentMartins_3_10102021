@@ -194,7 +194,8 @@ h1, .menus_header {
 .menus_title {
   text-transform: uppercase;
   font-weight: normal;
-  border-bottom: 5px solid #99E2D0;
+  border-bottom: 4px solid #99E2D0;
+  width: 50px;
 }
 
 .menus_section {
