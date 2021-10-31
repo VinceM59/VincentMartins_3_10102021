@@ -1,6 +1,35 @@
 @import "./base/base";
 @import "./layouts/layouts";
 
+
+
+
+/*loader*/
+
+.load
+{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+
+    &_bar
+    {
+        background: linear-gradient($color_secondary, $color_primary);
+        width: 100%;
+        height: 100%; 
+        animation: bars 100ms;
+    }
+}
+@keyframes bars 
+{
+    0% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
+}
 #search
 {
     display: flex;
@@ -101,13 +130,13 @@
 }
 
 .file_new
-        {
-            background-color: $color_tertiary;
-            padding: 0.5rem;
-            position: absolute;
-            top: 0rem;
-            right: 1rem;
-        }
+{
+    background-color: $color_tertiary;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+}
 
 .file_text
 {
@@ -215,6 +244,38 @@
     font-weight: 600;
 }
 
+/*check*/
+
+.menu_check
+{
+    background-color: $color_tertiary;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 4rem;
+    margin: -1rem -5rem -1rem 1rem;
+    transition-duration: 0.5s;
+}
+
+.menu_check_icon
+{
+    background-color: #F5F5F5;
+    border-radius: 100%;
+    width: 1.4rem;
+    height: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
+
+.fa-check
+{
+color: $color_tertiary;
+}
+/*buttons*/
+
 .but_command
 {
     display: flex;
@@ -231,6 +292,12 @@
     cursor: pointer;
     box-shadow: 0 0 16px #0000002e;
     font-size: 1rem;
+
+    &:hover
+    {
+      transform: scale(1.1);  
+      background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+    }
 }
 
 .menu_button
