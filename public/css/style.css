@@ -76,12 +76,13 @@ h1, .menus_header {
   background-color: #F5F5F5;
   border-radius: 1rem;
   flex: 1;
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 2rem;
   box-shadow: 0 0 8px #0000002e;
 }
 
 .fonction_icon {
   margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .fonction_text {
@@ -89,8 +90,8 @@ h1, .menus_header {
 }
 
 .number {
-  background: #9356dc;
-  color: white;
+  background: #9356DC;
+  color: #F5F5F5;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -271,7 +272,6 @@ h1, .menus_header {
   justify-content: center;
   display: flex;
   transform: rotate(180deg);
-  transition-duration: 0.5s;
 }
 
 .fa-check {
@@ -387,6 +387,10 @@ h1, .menus_header {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 2rem;
+  }
+
+  .number {
+    top: 10px;
   }
 }
 @media screen and (max-width: 850px) {
