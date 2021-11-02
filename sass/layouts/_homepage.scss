@@ -1,0 +1,69 @@
+#restaurants
+{
+    background-color: #F5F5F5;
+    padding: 2rem;
+}
+
+
+
+
+.files
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.file 
+{
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    position: relative;
+
+    &_img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 14rem;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+        
+}
+
+.file_new
+{
+    background-color: $color_tertiary;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+}
+
+.file_text
+{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.file_info
+{
+    flex: 1;
+}
+
+.file_title
+{
+    margin: 0 0 0.30rem 0;
+}
+.file_subtitle
+{
+    margin: 0;
+}
+
+.file_heart
+{
+    font-size: 25px;
+}

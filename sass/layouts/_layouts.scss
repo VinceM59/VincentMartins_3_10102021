@@ -10,6 +10,85 @@
     text-align: center;
 }
 
+#search
+{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #E9EDEB;
+    padding: 1rem;
+}
+.search_city
+{
+    margin-left: 1rem;
+    font-weight: 700;
+}
+
+#explore
+{
+    text-align: center;
+    padding: 2rem;
+    background-color: #FAF9F9;
+}
+
+.explore_text
+{
+    padding-bottom: 24px;
+}
+
+#fonction
+{
+    padding: 2rem 1.2rem;
+}
+
+.fonction_title
+{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+#fonction_list
+{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.fonction_filter
+{
+    padding: 1.5rem;
+    display: flex;
+    position: relative;
+    background-color: #F5F5F5;
+    border-radius: 1rem;
+    flex: 1;
+    margin: 0 0 0 1rem;
+    box-shadow: 0 0 8px #0000002e;
+}
+
+.fonction_icon
+{
+    margin-right: 1rem;
+}
+.fonction_text
+{
+    margin: 0;
+}
+.number
+{
+    background: #9356dc;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 16px;
+}
+
 #footer
 {
     background-color: #353535;

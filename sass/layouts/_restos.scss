@@ -1,0 +1,145 @@
+/*Pages HTML annexes*/
+
+.fa-arrow-left
+{
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0.9rem;
+    left: 1rem;
+}
+
+.resto_img
+{
+    width: 100%;
+    object-fit: cover;
+    max-height: 40rem;
+}
+
+#menus
+{
+    background-color: #F5F5F5;
+    border-radius: 2rem 2rem 0 0;
+    position: relative;
+    margin-top: -4rem;
+}
+
+
+.menus_header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+.menus_carte
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+}
+
+.menus_title
+{
+    text-transform: uppercase;
+    font-weight: normal;
+    border-bottom: 4px solid $color_tertiary;
+    width: 50px;
+}
+
+.menus_section
+{
+    padding: 1rem;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    from {
+      transform: translatey(20px);
+      opacity: 0%;
+    }
+  
+    to {
+      transform: translatey(0px);
+      opacity: 100%;
+    }
+  }
+
+#menu
+{
+    display: flex;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 16px #0000002e;
+    overflow: hidden;
+    animation: slide 1s forwards;
+    
+}
+
+.menu_text
+{
+    flex: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.menu_title
+{
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.menu_subtitle
+{
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu_price
+{
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+}
+
+/*check*/
+
+.menu_check
+{
+    background-color: $color_tertiary;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 4rem;
+    margin: -1rem -5rem -1rem 1rem;
+    transition-duration: 0.5s;
+}
+
+#menu:hover .menu_check
+{
+    margin-right: -1rem;
+
+    
+}
+.menu_check_icon
+{
+    background-color: #F5F5F5;
+    border-radius: 100%;
+    width: 1.4rem;
+    height: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
+
+.fa-check
+{
+color: $color_tertiary;
+}
