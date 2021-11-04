@@ -74,7 +74,9 @@
     cursor: pointer;
     box-shadow: 0 0 16px #0000002e;
     overflow: hidden;
-    animation: slide 1s forwards;
+    animation: slide 2s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82)
     
 }
 
@@ -136,6 +138,12 @@
     justify-content: center;
     display: flex;
     transform: rotate(180deg);
+    transition-duration: 0.8s;
+}
+
+#menu:hover .menu_check_icon
+{
+    transform: rotate(0);
 }
 
 .fa-check
