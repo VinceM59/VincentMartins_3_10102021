@@ -61,7 +61,38 @@
     margin: 0;
 }
 
-.file_heart
+.file_heart:hover
 {
-    font-size: 25px;
+    .fas.fa-heart
+        {
+            opacity: 1;
+            transition: 0.3s ease-in-out;
+        }
+
+    .far.fa-heart
+        {
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+}
+
+.fas.fa-heart
+{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    background: linear-gradient($color_secondary, $color_primary);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+}
+
+.far.fa-heart
+{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    opacity: 1;
 }
