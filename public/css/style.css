@@ -179,7 +179,6 @@ h1, .menus_header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  align-items: center;
 }
 
 .menus_carte {
@@ -200,17 +199,29 @@ h1, .menus_header {
   overflow: hidden;
 }
 
+#menus_entrees {
+  animation: slide 2s;
+}
+
+#menus_plats {
+  animation: slide 3s;
+}
+
+#menus_desserts {
+  animation: slide 4s;
+}
+
 @keyframes slide {
-  from {
+  0% {
     transform: translatey(20px);
     opacity: 0%;
   }
-  to {
+  100% {
     transform: translatey(0px);
     opacity: 100%;
   }
 }
-#menu {
+.menu {
   display: flex;
   background-color: #ffffff;
   padding: 1rem;
@@ -219,32 +230,25 @@ h1, .menus_header {
   cursor: pointer;
   box-shadow: 0 0 16px #0000002e;
   overflow: hidden;
-  animation: slide 2s;
-  animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
-
 .menu_text {
   flex: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-
 .menu_title {
   margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-
 .menu_subtitle {
   margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-
 .menu_price {
   display: flex;
   align-items: flex-end;
@@ -262,7 +266,7 @@ h1, .menus_header {
   transition-duration: 0.5s;
 }
 
-#menu:hover .menu_check {
+.menu:hover .menu_check {
   margin-right: -1rem;
 }
 
@@ -278,7 +282,7 @@ h1, .menus_header {
   transition-duration: 0.8s;
 }
 
-#menu:hover .menu_check_icon {
+.menu:hover .menu_check_icon {
   transform: rotate(0);
 }
 
@@ -363,6 +367,19 @@ h1, .menus_header {
   right: 25px;
   bottom: 25px;
   opacity: 1;
+}
+
+.menus_heart:hover .fas.fa-heart {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+.menus_heart:hover .far.fa-heart {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.menus_heart {
+  position: relative;
 }
 
 /*loader*/

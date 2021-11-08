@@ -96,3 +96,23 @@
     bottom: 25px;
     opacity: 1;
 }
+
+.menus_heart:hover
+{
+    .fas.fa-heart
+        {
+            opacity: 1;
+            transition: 0.3s ease-in-out;
+        }
+
+    .far.fa-heart
+        {
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+}
+
+.menus_heart
+{
+    position: relative;
+}
