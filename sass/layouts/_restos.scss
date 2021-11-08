@@ -131,8 +131,8 @@
 .menu_check
 {
     background-color: $color_tertiary;
-    justify-content: center;
-    align-items: center;
+    justify-content: $position;
+    align-items: $position;
     display: flex;
     width: 4rem;
     margin: -1rem -5rem -1rem 1rem;
@@ -151,8 +151,8 @@
     border-radius: 100%;
     width: 1.4rem;
     height: 1.4rem;
-    align-items: center;
-    justify-content: center;
+    align-items: $position;
+    justify-content: $position;
     display: flex;
     transform: rotate(180deg);
     transition-duration: 0.8s;

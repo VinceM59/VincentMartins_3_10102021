@@ -2,18 +2,20 @@
 {
     margin: 1rem;
     position: relative;
+
+    &_logo
+    {
+        margin: 0;
+        text-align: $position;
+    }
 }
 
-.header_logo
-{
-    margin: 0;
-    text-align: center;
-}
+
 
 #search
 {
     display: flex;
-    justify-content: center;
+    justify-content: $position;
     font-size: 1.2rem;
     background-color: #E9EDEB;
     padding: 1rem;
@@ -26,7 +28,7 @@
 
 #explore
 {
-    text-align: center;
+    text-align: $position;
     padding: 2rem;
     background-color: #FAF9F9;
 }
@@ -85,8 +87,8 @@
     position: absolute;
     left: -0.8rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: $position;
+    justify-content: $position;
     top: 16px;
 }
 

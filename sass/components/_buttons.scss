@@ -4,7 +4,7 @@
 {
     display: flex;
     padding: 0 2rem;
-    justify-content: center;
+    justify-content: $position;
 }
 
 .button
@@ -29,6 +29,6 @@
 .menu_button
 {
     padding: 1rem;
-    justify-content: center;
+    justify-content: $position;
     display: flex;
 }

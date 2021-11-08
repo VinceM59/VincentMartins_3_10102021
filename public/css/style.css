@@ -25,7 +25,6 @@ h1, .menus_header {
   margin: 1rem;
   position: relative;
 }
-
 .header_logo {
   margin: 0;
   text-align: center;
@@ -290,6 +289,52 @@ h1, .menus_header {
   color: #99E2D0;
 }
 
+/*loader*/
+@keyframes loading {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+.loader {
+  background-color: #f5f5f5;
+  opacity: 0.9;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  animation: loading 0.2s 2s forwards;
+}
+
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.load {
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.load_bar {
+  background: linear-gradient(#FF79DA, #9356DC);
+  width: 1rem;
+  height: 8rem;
+  animation: bars 1000ms infinite;
+  animation-direction: alternate;
+}
+
 #restaurants {
   background-color: #F5F5F5;
   padding: 2rem;
@@ -314,7 +359,6 @@ h1, .menus_header {
   height: 14rem;
   border-radius: 1rem 1rem 0 0;
 }
-
 .file_new {
   background-color: #99E2D0;
   padding: 0.5rem;
@@ -382,60 +426,10 @@ h1, .menus_header {
   position: relative;
 }
 
-/*loader*/
-@keyframes loading {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-    visibility: hidden;
-  }
-}
-.loader {
-  background-color: #f5f5f5;
-  opacity: 0.9;
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  top: 0;
-  animation: loading 0.2s 3s forwards;
-}
-
-@keyframes bars {
-  0% {
-    transform: scaleY(0.5);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-.load {
-  width: 8rem;
-  height: 3rem;
-  display: flex;
-  justify-content: space-evenly;
-}
-.load_bar {
-  background: linear-gradient(#FF79DA, #9356DC);
-  width: 1rem;
-  height: 8rem;
-  animation: bars 1000ms infinite;
-  animation-direction: alternate;
-}
-
 /*responsive*/
 @media screen and (max-width: 1100px) {
   .explore_title {
     font-size: 28px;
-  }
-
-  .explore_text {
-    font-size: 18px;
   }
 
   #fonction_list {
@@ -469,6 +463,16 @@ h1, .menus_header {
 @media screen and (max-width: 850px) {
   #picture {
     max-height: 21rem;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 1100px) {
+  .explore_text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .explore_text {
+    font-size: 15px;
   }
 }
 
