@@ -83,7 +83,7 @@
     right: 25px;
     bottom: 25px;
     background: linear-gradient($color_secondary, $color_primary);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
 }
