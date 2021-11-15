@@ -79,6 +79,10 @@ h1, .menus_header {
   box-shadow: 0 0 8px #0000002e;
 }
 
+.fonction_filter:hover {
+  background-color: #EEE2FF;
+}
+
 .fonction_icon {
   margin-right: 1rem;
   margin-left: 1rem;
@@ -392,10 +396,6 @@ h1, .menus_header {
 .file_heart:hover .far.fa-heart {
   opacity: 0;
   transition: 0.3s ease-in-out;
-}
-
-.file_heart:active {
-  background-color: linear-gradient(#FF79DA, #9356DC);
 }
 
 .fas.fa-heart {
