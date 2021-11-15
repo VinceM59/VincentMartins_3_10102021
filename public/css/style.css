@@ -394,6 +394,10 @@ h1, .menus_header {
   transition: 0.3s ease-in-out;
 }
 
+.file_heart:active {
+  background-color: linear-gradient(#FF79DA, #9356DC);
+}
+
 .fas.fa-heart {
   font-size: 1.5rem;
   position: absolute;
@@ -473,6 +477,10 @@ h1, .menus_header {
 @media screen and (max-width: 550px) {
   .explore_text {
     font-size: 15px;
+  }
+
+  .fonction_filter:active {
+    background-color: #EEE2FF;
   }
 }
 
